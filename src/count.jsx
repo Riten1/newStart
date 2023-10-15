@@ -5,7 +5,11 @@ const Count = () => {
   let [count, setCount] = useState(0);
 
   function add() {
-    setCount(count + 1);
+    if (count == 20) {
+      setCount(20);
+    } else {
+      setCount(count + 1);
+    }
   }
 
   function sub() {
