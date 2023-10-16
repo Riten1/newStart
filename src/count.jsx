@@ -1,18 +1,14 @@
-import Button from './components/button';
-import './index.css'
+import Button from "./components/button";
+import "./index.css";
 
 const Count = () => {
-  let details = {
-    fname: 'Riten Gurung',
-    address: 'Pokhara',
-    id: 12
-  };
+  let details = ["Riten Gurung", "Rachit Ale", "Bishek Shrestha", 'Ram Bahadur'];
 
   return (
     <>
-    
-      <Button name={details.fname} address ={ details.address} />
-     
+      
+        <Button name={details} />
+      
     </>
   );
 };
